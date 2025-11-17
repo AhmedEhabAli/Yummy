@@ -474,7 +474,7 @@ function validateInput(element) {
     email: /^(?!.*\s)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
     phone: /^(01[0125][0-9]{8})$/,
     age: /^(?:[1-7][0-9]|80)$/,
-    password: /^[A-Za-z]\d{5,}\s*$/,
+    password: /^[A-Za-z](?=.*\d)[A-Za-z\d]{5,}$/,
   };
 
   touched[element.id] = true;
@@ -519,3 +519,4 @@ function checkForm() {
 }
 
 //End Contact Us
+
